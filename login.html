@@ -8,9 +8,9 @@
     <body>
         <div class="wrapper">
             <p>登入頁面</p>
-            <form class="login">
-                <input type="text" placeholder="帳號">
-                <input type="text" placeholder="密碼">
+            <form class="login" action='login/login.php' method='POST'>
+                <input name="name" type="text" placeholder="名稱">
+                <input name="password" type="password" placeholder="密碼">
                 <div class="button-inner">
                     <button type="submit">登入</button>
                     <button type="button" onclick="window.location.href='register.html'">註冊</button>
