@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3b36cc;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    width: 450px;
+    height: 350px;
+    padding: 25px;
+    background-color: #1a1a40;
+    border-radius: 5px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.seat{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: #1a1a1e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat:hover{
+    background-color: green;
+    box-shadow: 5px 5px 5px black;
+}
+
+.seat:active{
+    background-color: green;
+}
+
+.sold{
+    background-color: white;
+}
+
+.sold:hover{
+    background-color: white;
+    box-shadow: 0px 0px 0px black;
+    cursor: not-allowed;
+}
+
+.sold:active{
+    background-color: white;
+}
+
+.empty{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color: gray;
+}
+
+.submit-button{
+    border: none;
+    background-color: #231f95;
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.submit-button:hover{
+    box-shadow: 5px 5px 5px black;
+}
