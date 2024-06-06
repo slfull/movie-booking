@@ -7,8 +7,8 @@
     </head>
     <body>
         <div class="top">
-            <button type="button" onclick="window.location.href='register.html'">sign up</button>
-            <button type="button" onclick="window.location.href='login.html'">sign in</button>
+            <button id="userData"></button>
+            <button type="button" onclick="window.location.href='login/logout.php'">logout</button>
         </div>
         <div class="wrapper">
             <form>
@@ -19,8 +19,12 @@
                     <option value="c">c</option>
                     <option value="d">d</option>
                 </select>
-                <div><button type="submit">提交</button></div>
+                <div>
+                    <button type="submit">提交</button>
+                </div>
             </form>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
