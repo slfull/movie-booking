@@ -56,17 +56,35 @@ body{
     background-color: green;
 }
 
-.sold{
+.seat.buy{
+    background-color: green;
+}
+
+.seat.sold{
     background-color: white;
 }
 
-.sold:hover{
+.seat.sold:hover{
     background-color: white;
     box-shadow: 0px 0px 0px black;
     cursor: not-allowed;
 }
 
-.sold:active{
+.seat.sold:active{
+    background-color: white;
+}
+
+.seat.sold.buy{
+    background-color: white;
+}
+
+.seat.sold.buy:hover{
+    background-color: white;
+    box-shadow: 0px 0px 0px black;
+    cursor: not-allowed;
+}
+
+.seat.sold.buy:active{
     background-color: white;
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-function check_login($con)
+function check_login($con) //回傳user_data，沒登入的話跳轉登入介面
 {
 
 	if(isset($_SESSION['user_id'])){
@@ -22,7 +22,7 @@ function check_login($con)
 
 }
 
-function random_num($length)
+function random_num($length) //生成隨機ID
 {
 
 	$text = "";

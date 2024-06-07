@@ -6,7 +6,7 @@ session_start();
 	include("functions.php");
 
 
-	if($_SERVER['REQUEST_METHOD'] == "POST")
+	if($_SERVER['REQUEST_METHOD'] == "POST") //檢查登入的資料是否正確
 	{
 		$user_name = $_POST['name'];
 		$password = $_POST['password'];

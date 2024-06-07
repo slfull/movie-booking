@@ -10,7 +10,10 @@ body{
     font-family: sans-serif;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
+
 
 .top{
     background-color: #100a60;
@@ -19,9 +22,13 @@ body{
     text-align: right;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .top > button{
+    margin-top: 100px;
     border: none;
     background-color: #100a60;
     color: white;
@@ -39,12 +46,14 @@ body{
 
 .wrapper{
     width: 450px;
-    height: 250px;
-    padding: 50px;
+    height: 350px;
+    padding: 25px;
     background-color: #1a1a40;
     border-radius: 5px;
     margin-top: 75px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .wrapper > form > select {

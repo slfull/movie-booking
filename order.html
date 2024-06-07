@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>login page</title>
-    <head>
-        <meta charset="UTF-8">
-        <style>@import url(order.css);</style>
-    </head>
-    <body>
-        <div class="wrapper">
-              <div class="container">
-          
-                <div class="row">
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="empty"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="empty"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                </div>
-          
-                <div class="row">
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="empty"></div>
-                  <div class="seat"></div>
-                  <div class="seat sold"></div>
-                  <div class="seat sold"></div>
-                  <div class="seat"></div>
-                  <div class="empty"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                </div>
-                <div class="row">
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                    <div class="empty"></div>
-                    <div class="seat"></div>
-                    <div class="seat sold"></div>
-                    <div class="seat sold"></div>
-                    <div class="seat"></div>
-                    <div class="empty"></div>
-                    <div class="seat"></div>
-                    <div class="seat"></div>
-                  </div>   
-              </div>
-              <button type="submit" class="submit-button">訂位</button>
+  <title>order page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @import url(order.css);
+    </style>
+  </head>
+  <body>
+    <form class="wrapper" id="orderform" action="order/order.php" method="POST"><!--POST到後端表單選擇-->
+      <div class="container">
+        <div class="row">
+          <div class="seat" data-seat="A1"></div>
+          <div class="seat" data-seat="A2"></div>
+          <div class="empty"></div>
+          <div class="seat" data-seat="A3"></div>
+          <div class="seat" data-seat="A4"></div>
+          <div class="seat" data-seat="A5"></div>
+          <div class="seat" data-seat="A6"></div>
+          <div class="empty"></div>
+          <div class="seat" data-seat="A7"></div>
+          <div class="seat" data-seat="A8"></div>
         </div>
-    </body>
+        <div class="row">
+          <div class="seat" data-seat="B1"></div>
+          <div class="seat" data-seat="B2"></div>
+          <div class="empty"></div>
+          <div class="seat" data-seat="B3"></div>
+          <div class="seat" data-seat="B4"></div>
+          <div class="seat" data-seat="B5"></div>
+          <div class="seat" data-seat="B6"></div>
+          <div class="empty"></div>
+          <div class="seat" data-seat="B7"></div>
+          <div class="seat" data-seat="B8"></div>
+        </div>
+        <div class="row">
+          <div class="seat" data-seat="C1"></div>
+          <div class="seat" data-seat="C2"></div>
+          <div class="empty"></div>
+          <div class="seat" data-seat="C3"></div>
+          <div class="seat" data-seat="C4"></div>
+          <div class="seat" data-seat="C5"></div>
+          <div class="seat" data-seat="C6"></div>
+          <div class="empty"></div>
+          <div class="seat" data-seat="C7"></div>
+          <div class="seat" data-seat="C8"></div>
+        </div>
+      </div>
+      <input type="hidden" name="selectedSeats" id="selectedSeats">
+      <button type="submit" class="submit-button">訂位</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="order.js"></script>
+  </body>
 </html>
